@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Library</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+</head>
+<body>
+    <header>
+        <h2>library</h2>
+        <button class="login">Log in</button>
+    </header>
+    <div class="main">
+        <div class="addBook">
+            <button id="addButton">+ Add book</button>
+            <div id="myModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                <span class="close">&times;</span>
+                <h2>Add a new book!</h2>
+                </div>
+                <div class="modal-body">
+                <input name="title" id="title" type="text" placeholder="Title" required>
+                <input name="author" id="author" type="text" placeholder="Author" required>
+                <input name="pages" id="pages" type="number" placeholder="Number of pages" min="0"
+                max="2000" required>
+                <button id="submit">Submit</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div id="books"></div>
+        </div>
+    </div>
+    <footer>
+        <h3>Copyright © Pedro Narbondo </h3>
+        <a href="https://github.com/pedronarbondo"><img src="img/github.png"></a>
+    </footer>
+</body>
+</html>
