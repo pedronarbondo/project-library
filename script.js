@@ -3,8 +3,16 @@ let modal = document.getElementById("myModal");
 let btn = document.getElementById("addButton");
 let span = document.getElementsByClassName("close")[0];
 let submit = document.getElementById("submit");
+
+let titleInput = document.getElementById("title");
+let authorInput = document.getElementById("author");
+let pagesInput = document.getElementById("pages");
+
 btn.onclick = function() {
   modal.style.display = "block";
+  titleInput.value = "";
+  authorInput.value = "";
+  pagesInput.value = "";
 }
 span.onclick = function() {
   modal.style.display = "none";
@@ -16,9 +24,6 @@ window.onclick = function(event) {
 }
 submit.onclick = function() {
     modal.style.display = "none";
-    let titleInput = document.getElementById("title");
-    let authorInput = document.getElementById("author");
-    let pagesInput = document.getElementById("pages");
 
     let bookTitleModal = titleInput.value;
     let bookAuthorModal = authorInput.value;
